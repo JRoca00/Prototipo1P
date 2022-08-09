@@ -21,7 +21,7 @@ public class menuproductos extends javax.swing.JFrame {
      */
     public menuproductos() {
         initComponents();
-        this.setLocationRelativeTo(null);
+        
     }
 
     /**

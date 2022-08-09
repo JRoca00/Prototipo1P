@@ -9,12 +9,12 @@ package prototipo1p_;
  *
  * @author marro
  */
-public class Menu extends javax.swing.JFrame {
+public class menuproduc extends javax.swing.JFrame {
 
     /**
-     * Creates new form Menu
+     * Creates new form menuproduc
      */
-    public Menu() {
+    public menuproduc() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -29,39 +29,30 @@ public class Menu extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
-        BTCLI = new javax.swing.JButton();
-        BTVENTA = new javax.swing.JButton();
-        BTPRODUCTOS = new javax.swing.JButton();
+        BTINGRESAR = new javax.swing.JButton();
+        BTCREDITOS = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel2.setBackground(new java.awt.Color(0, 102, 102));
 
-        BTCLI.setBackground(new java.awt.Color(0, 153, 153));
-        BTCLI.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        BTCLI.setText("CLIENTES");
-        BTCLI.addActionListener(new java.awt.event.ActionListener() {
+        BTINGRESAR.setBackground(new java.awt.Color(0, 153, 153));
+        BTINGRESAR.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        BTINGRESAR.setText("INGRESAR");
+        BTINGRESAR.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BTCLIActionPerformed(evt);
+                BTINGRESARActionPerformed(evt);
             }
         });
 
-        BTVENTA.setBackground(new java.awt.Color(0, 153, 153));
-        BTVENTA.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        BTVENTA.setText("VENTAS");
-        BTVENTA.addActionListener(new java.awt.event.ActionListener() {
+        BTCREDITOS.setBackground(new java.awt.Color(0, 153, 153));
+        BTCREDITOS.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        BTCREDITOS.setText("VER");
+        BTCREDITOS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BTVENTAActionPerformed(evt);
-            }
-        });
-
-        BTPRODUCTOS.setBackground(new java.awt.Color(0, 153, 153));
-        BTPRODUCTOS.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        BTPRODUCTOS.setText("PRODUCTOS");
-        BTPRODUCTOS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                BTPRODUCTOSActionPerformed(evt);
+                BTCREDITOSActionPerformed(evt);
             }
         });
 
@@ -73,6 +64,9 @@ public class Menu extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Informal Roman", 1, 36)); // NOI18N
+        jLabel1.setText("PRODUCTOS");
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -80,12 +74,15 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BTCLI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BTVENTA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(BTPRODUCTOS, javax.swing.GroupLayout.DEFAULT_SIZE, 352, Short.MAX_VALUE)
+                    .addComponent(BTINGRESAR, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
+                    .addComponent(BTCREDITOS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton1)))
+                        .addComponent(jButton1))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
@@ -93,20 +90,20 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jButton1)
-                .addGap(43, 43, 43)
-                .addComponent(BTCLI, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
-                .addComponent(BTVENTA, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95)
-                .addComponent(BTPRODUCTOS, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82))
+                .addGap(5, 5, 5)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+                .addComponent(BTINGRESAR, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(65, 65, 65)
+                .addComponent(BTCREDITOS, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(63, 63, 63))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,20 +113,15 @@ public class Menu extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void BTCLIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTCLIActionPerformed
-        menuclientes generar = new menuclientes();
+    private void BTINGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTINGRESARActionPerformed
+        menuproductos generar = new menuproductos();
         generar.setVisible(true);
-    }//GEN-LAST:event_BTCLIActionPerformed
+    }//GEN-LAST:event_BTINGRESARActionPerformed
 
-    private void BTVENTAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTVENTAActionPerformed
-        menuventas generar = new menuventas();
+    private void BTCREDITOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTCREDITOSActionPerformed
+        mostrarproducto generar = new mostrarproducto();
         generar.setVisible(true);
-    }//GEN-LAST:event_BTVENTAActionPerformed
-
-    private void BTPRODUCTOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTPRODUCTOSActionPerformed
-        menuproduc generar = new menuproduc();
-        generar.setVisible(true);
-    }//GEN-LAST:event_BTPRODUCTOSActionPerformed
+    }//GEN-LAST:event_BTCREDITOSActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         setVisible(false);
@@ -152,29 +144,29 @@ public class Menu extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menuproduc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menuproduc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menuproduc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(menuproduc.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Menu().setVisible(true);
+                new menuproduc().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BTCLI;
-    private javax.swing.JButton BTPRODUCTOS;
-    private javax.swing.JButton BTVENTA;
+    private javax.swing.JButton BTCREDITOS;
+    private javax.swing.JButton BTINGRESAR;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
