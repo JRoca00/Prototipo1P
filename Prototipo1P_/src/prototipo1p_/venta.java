@@ -88,7 +88,7 @@ public class venta extends javax.swing.JFrame {
         );
 
         jLabel1.setFont(new java.awt.Font("Informal Roman", 1, 36)); // NOI18N
-        jLabel1.setText("INGRESO CLIENTE");
+        jLabel1.setText("INGRESO VENTA");
 
         jLabel3.setFont(new java.awt.Font("Trebuchet MS", 2, 14)); // NOI18N
         jLabel3.setText("Id_producto");

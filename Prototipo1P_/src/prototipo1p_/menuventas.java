@@ -33,6 +33,7 @@ public class menuventas extends javax.swing.JFrame {
         BTCREDITOS = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        BTCREDITOS1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,7 +50,7 @@ public class menuventas extends javax.swing.JFrame {
 
         BTCREDITOS.setBackground(new java.awt.Color(0, 153, 153));
         BTCREDITOS.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
-        BTCREDITOS.setText("VER");
+        BTCREDITOS.setText("PAGOS");
         BTCREDITOS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BTCREDITOSActionPerformed(evt);
@@ -67,6 +68,15 @@ public class menuventas extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Informal Roman", 1, 36)); // NOI18N
         jLabel1.setText("VENTAS");
 
+        BTCREDITOS1.setBackground(new java.awt.Color(0, 153, 153));
+        BTCREDITOS1.setFont(new java.awt.Font("Mongolian Baiti", 1, 18)); // NOI18N
+        BTCREDITOS1.setText("CREDITOS");
+        BTCREDITOS1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTCREDITOS1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -74,7 +84,6 @@ public class menuventas extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(BTINGRESAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(BTCREDITOS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -84,6 +93,14 @@ public class menuventas extends javax.swing.JFrame {
                 .addContainerGap(123, Short.MAX_VALUE)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 215, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(62, 62, 62))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addComponent(BTINGRESAR, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel2Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(BTCREDITOS1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -92,11 +109,16 @@ public class menuventas extends javax.swing.JFrame {
                 .addComponent(jButton1)
                 .addGap(11, 11, 11)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(32, 32, 32)
                 .addComponent(BTINGRESAR, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
                 .addComponent(BTCREDITOS, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(63, 63, 63))
+                .addGap(66, 66, 66))
+            .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                    .addContainerGap(265, Short.MAX_VALUE)
+                    .addComponent(BTCREDITOS1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(169, 169, 169)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -119,13 +141,18 @@ public class menuventas extends javax.swing.JFrame {
     }//GEN-LAST:event_BTINGRESARActionPerformed
 
     private void BTCREDITOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTCREDITOSActionPerformed
-        cobrar generar = new cobrar();
+        actualizarcuenta generar = new actualizarcuenta();
         generar.setVisible(true);
     }//GEN-LAST:event_BTCREDITOSActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void BTCREDITOS1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTCREDITOS1ActionPerformed
+        cobrar generar = new cobrar();
+        generar.setVisible(true);
+    }//GEN-LAST:event_BTCREDITOS1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -164,6 +191,7 @@ public class menuventas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BTCREDITOS;
+    private javax.swing.JButton BTCREDITOS1;
     private javax.swing.JButton BTINGRESAR;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;

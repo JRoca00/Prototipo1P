@@ -26,6 +26,7 @@ public class actualizarcuenta extends javax.swing.JFrame {
      */
     public actualizarcuenta() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     
