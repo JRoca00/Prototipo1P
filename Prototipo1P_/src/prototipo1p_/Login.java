@@ -22,6 +22,7 @@ public class Login extends javax.swing.JFrame {
      */
     public Login() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
         void autentificacon(String valor){
         conectar cc=new conectar();
@@ -50,7 +51,7 @@ public class Login extends javax.swing.JFrame {
             
 
             if(datos[1].equals(jusuario.getText()) && datos[2].equals(jcontraseña.getText())){
-              ingresar generar = new ingresar();
+              Menu generar = new Menu();
               generar.setVisible(true);  
             }
            
